@@ -1,0 +1,25 @@
+
+
+x=100
+z=400
+y=500
+
+La=252.5
+Lb=252.5
+Lc=sqrt(sq(x)+sq(z))
+
+ThetaTarget=atan(z/x)
+
+alpha=acos((sq(L2)+sq(L3)-sq(L1))/(2*L2*L3))
+
+Theta1=180-(ThetaTarget-alpha)
+
+Theta2=acos((sq(L1)+sq(L2)-sq(L3))/(2*L1*L2))
+Theta3=-Theta2
+
+
+xL1 = sin(ThetaTarget-alpha)*252.3;
+
+xL2 = xTarget -xL1;
+
+Theta3=180-acos(xL2/L2);
